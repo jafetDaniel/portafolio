@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="jafet daniel">
+    <meta name="description" content="portafolio de desarrollo web">
+    <meta name="keywords" content="html, css, javascript, bootstrap, php, sql, laravel, java">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jafet Daniel | Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/icono.png">
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--iconos boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-ligth">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="images/icono.png" alt="logo de pagina" width="50px">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conocimientos">Conocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>          
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="docs/CV3-FonsecaGarciaJafetDaniel.pdf">CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--hero -->
+    <section id="hero" class="hero align-items-lg-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img id="img_perfil" src="images/daniel.jpg" alt="foto personal">
+            <h1>Hola, soy Jafet Daniel</h1>
+            <h2>Egresado de Ingeniería en Sistemas Computacionales</h2>
+        </div>
+
+        <div class="hero-inferior">   
+            <div class="shape1 shape"></div> 
+            <img id="img_code" class="hero-inferior-image img-fluid" src="images/code.png" alt="code">
+            <div class="shape2 shape"></div> 
+        </div>
+    </section>
+
+    <!-- sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo texto-blanco">Sobre mi</h2>
+            <p class="seccion-texto">
+                Mi interes se enfoca en la programación y desarollo web.<br>
+                Me gusta aprender y estudiar constantemente nuevas tecnologías. <br>
+                Mi perfil se enfoca en encontrar una empresa que me permita aplicar mis conocimientos, 
+                así como ampliar mi experiencia laboral en el sector que más me apasiona, la tecnología. 
+            </p>
+            <h2 class="seccion-titulo texto-blanco">Educación</h2>
+            <p class="seccion-texto">Enero 2017 – diciembre 2022 | Estudios concluidos en la carrera de Ingeniería en Sistemas computacionales
+                en el Instituto Tecnológico de Toluca.</p>
+        </div>
+    </section>
+
+    <!-- conocimientos -->
+    <section id="conocimientos" class="conocimientos seccion-clara">
+        <h2 class="seccion-titulo texto-negro">Conocimientos</h2>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Desarrollo Web -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-code-slash"></i>
+                    <p class="conocimientos-titulo">Desarrollo Web</p>
+                    <p>área con mas experiencia.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-info">HTML</span>
+                        <span class="badge text-bg-info">CSS</span>
+                        <span class="badge text-bg-info">JavaScript</span>
+                        <span class="badge text-bg-info">Angular</span>
+                        <span class="badge text-bg-info">PHP</span>
+                        <span class="badge text-bg-info">Laravel</span>
+                        <span class="badge text-bg-info">Bootstrap</span>
+                        <span class="badge text-bg-info">JQuery</span>
+                        <span class="badge text-bg-info">SQL, Oracle, MySQL</span>
+                        <span class="badge text-bg-info">Git, GitHub</span>
+                    </div>
+                </div>
+
+                <!-- sistemas operativos -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="conocimientos-titulo">Sistemas Operativos</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-info">Windows</span>
+                        <span class="badge text-bg-info">Linux</span>
+                    </div>
+                </div>
+
+                <!-- otras tecnologias -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-braces"></i>
+                    <p class="conocimientos-titulo">Otras Tecnologías y conocimientos</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-info">Java</span>
+                        <span class="badge text-bg-info">Android Studio</span>
+                        <span class="badge text-bg-info">Idioma Español (nativo)</span>
+                        <span class="badge text-bg-info">Idioma Inglés A2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+        <h3 class="seccion-descripcion">Estos son algunos proyectos creados recientemente...</h3>
+        <!-- Galeria de Proyectos -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/proyecto1.png" alt="Proyecto 1" class="img-proyectos">
+                        <div class="overlay">
+                            <p>Sitio Ecommerce</p>
+                            <div class="iconos-contenedor">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/proyecto_gmtask.png" alt="Proyecto 2">
+                        <div class="overlay">
+                            <p>Sistema web ERP GMtask</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/jafetDaniel/sistema-web-ERP-GMTask" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/proyecto1.png" alt="Proyecto 3">
+                        <div class="overlay">
+                            <p>Punto de Venta en Java</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com/jafetDaniel/PuntoDeVenta-java" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <a href="https://github.com/jafetDaniel" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-dark">
+                Ver más proyectos
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </a>
+    </section>
+
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="experiencia justify-content-start">
+        <h2 class="seccion-titulo texto-negro">Experiencia</h2>
+        <div class="card">
+            <div class="card-header">
+                Más recientes
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <p>
+                       <b>Residencia profesional en General Motors</b> | julio 2022 - enero
+                        2023
+                        Actualización de software existentes y desarrollo de un nuevo sistema web de tipo
+                        ERP.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <p>
+                        <b>Servicio social en la Defensoría Municipal de Derechos Humanos
+                        de Zinacantepec</b> | enero - junio 2022
+                        desarrollo de software para captura de información en base de
+                        datos, soporte a equipos de cómputo, manejo de Windows y
+                        paquetería office.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <p>
+                        <b>Despacho Jurídico</b> | enero - diciembre 2021 Encargado de soporte 
+                        técnico y mantenimiento a equipos de cómputo.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        ¡Contactame!
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        Contáctame para iniciar un proyecto u oportunidad laboral. 
+                        Me encuentro abierto a nuevas experiencias y con ganas de aprender nuevas habilidades.
+                        <br>
+                        ** jdaniel0817@gmail.com **
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:jdaniel0817@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-check-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="images/icono-blanco.svg" alt="Logo del portafolio">
+        <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Me apasiona el ámbito de la tecnología.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+
+            <a href="https://github.com/jafetDaniel" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jafet-daniel-fonseca-garcia-9bb571235" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:jdaniel0817@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Jafet Daniel &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
