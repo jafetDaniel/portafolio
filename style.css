@@ -72,8 +72,8 @@ h1{
 }
 /*hero inferior*/
 .hero-inferior-image{
-  width:350px;
-  height:350px;
+  width:200px;
+  height:200px;
 }
 @media screen and (max-width: 500px) { /*redimensionar imagen verde*/
   .hero-inferior-image{
@@ -86,14 +86,14 @@ h1{
   background: #00d49f;
   display: inline-block; /*convertir un elemento bloque a inline conservando las propiedades de bloque*/
 }
-.shape1{/*esfera*/
-  height: 100px;
-  width: 100px;
-  margin-bottom: -200px;
+.shape1{/*esfera arriba*/
+  height: 80px;
+  width: 80px;
+  margin-bottom: -150px;
 }
-.shape2{/*esfera*/
-  height: 150px;
-  width: 150px;
+.shape2{/*esfera abajo*/
+  height: 80px;
+  width: 80px;
   margin-left: 10px;
   margin-bottom: -70px;
 }
@@ -103,32 +103,32 @@ h1{
   }
 }
 
-
 /*sobre mi*/
 .sobre-mi{
-    height: 500px;
+    height: 400px;
     padding: 10px;
 }
 .sobre-mi .contenedor{
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
+}
+@media screen and (max-width:500px){
+  .sobre-mi .contenedor .seccion-titulo{
+    font-size: 1.5rem;
+  }
+  .sobre-mi .contenedor .seccion-texto{
+    font-size: 1.0rem;
+  }
 }
 
 /*conociminetos*/
-.conocimientos{
-    padding: 40px 40px 60px 40px;
+.conocimientos .container{
+   width: 40%;
 }
 .conociminetos-titulo{
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
-}
-.conocimientos i{
-    font-size: 2.5rem;
-    color: #00d49f;
-    background-color: #0a0a23;
-    padding: 8px 19px;
-    border-radius: 50%;
 }
 .badges-contenedor{
     font-size: 20px;
@@ -137,90 +137,39 @@ h1{
 }
 .badge{
     margin: 5px;
+    background-color: #00d49f;
+    color: #1b1b32;
 }
-.conocimientos .columna{
-    padding: 20px;
-    border: 2px solid #8080804d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: all 0.2s ease-in;
-}
-.conocimientos .columna:hover {
-    color: white;
-    background-color: #1b1b32;
-  }
 
   /* Proyectos */
-.proyectos-recientes {
+  .proyectos-recientes {
     padding: 40px;
   }
-  .proyectos-recientes img {
-    width: 100%;
-    height: 230px;
-    padding: 10px;
-    display: block;
-    transition: all 0.2s ease;
+  .proyectos-recientes .cards-group{
+    display: flex; /*para colocar cards en la misma linea*/
+    flex-wrap: wrap; /*si no caben los cards bajar a la sig linea*/
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
-  .proyectos-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
+  .proyectos-recientes .cards-group .card{
+    width: 25rem;
+    margin-left: 25px;
+    margin-bottom: 25px;
   }
-  .overlay {
-    transition: all 0.2s ease;
-    opacity: 0; /*oculto*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  .proyecto {
-    position: relative;
-  }
-  .proyecto:hover img {
-    opacity: 0.2;
-  }
-  .proyecto:hover .overlay {
-    opacity: 1;
-  }
-  .overlay i {
-    color: #00d49f;
-    font-size: 60px;
-    margin: 10px;
-  }
-  @media screen and (max-width: 400px) {
-    .overlay p {
-      font-size: 18px;
-    }
-    .overlay i {
-        font-size: 40px;
-      }
-  } 
-  @media screen and (max-width: 300px) {
-        .overlay p {
-          font-size: 12px;
-        }
-        .overlay i {
-            font-size: 12px;
-          }
+  .proyectos-recientes .cards-group .card:hover {
+    background-color: black;
+    color: white;
   }
 
   /* experiencia */
   .experiencia {
-    min-height: 500px;
+    min-height: 300px;
     padding: 30px;
     margin-bottom: 100px;
   }
   .experiencia .card {
     width: 80%;
-    max-width: 600px;
+    max-width: 100%;
     margin: 20px;
   }
   .experiencia .card-header {
@@ -277,7 +226,7 @@ h1{
   
   /* Pie de pagina (footer) */
   footer {
-    min-height: 500px;
+    min-height: 300px;
   }
   .footer-logo {
     height: 80px;
