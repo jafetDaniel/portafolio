@@ -160,6 +160,13 @@ h1{
     background-color: black;
     color: white;
   }
+  .card a{
+    text-decoration: none;/*quitar subrayado de enlaces*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+  }
 
   /* experiencia */
   .experiencia {
